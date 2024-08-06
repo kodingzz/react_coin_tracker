@@ -1,13 +1,120 @@
-body {
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  
+}
+
+.container h1{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 0.7rem;
+}
+.container h1 img{
+  width: 60px;
+  height: 60px;
+  border-radius: 30%;
+}
+
+select{
+
+  background-color: #FCB923;
+  border: none;
+  border-radius: 5px;
+ 
+  font-size: 20px;
+  outline: none;
+  width: 400px;
+  height: 40px;
+  transition: max-height 0.4s ease-in-out;
+}
+
+
+
+.convert_container{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dollar , .coin{
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  gap: 1rem;
+}
+
+.dollar label{
+  display: flex;
+  align-items: center;
+}
+.dollar label img {
+  width: 60px;
+  height: 30px;
+  background-color: transparent;
+}
+.coin label img {
+  width: 40px;
+  height: 30px;
+  background-color: transparent;
+}
+
+.coin label{
+  display: flex;
+  align-items:  center;
+  gap: 10px;
+}
+
+
+input{
+  width: 380px;
+  height: 50px;
+  font-size: 20px;
+  border: 2px solid #FCB923;
+  outline: none;
+  border-radius: 10px;
+}
+
+
+button{
+  padding: 0;
+  border: 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.invert{
+    font-size: 30px;
+    background-color: #f2f2f2;
+    padding: 0.7rem;
+    cursor: pointer;
+    transition: all 0.7s ease;
+}  
+.invert:hover{
+  transform: rotate(180deg);
+}
+
+
+.reset{
+  width: 80px;
+  height: 40px;
+  border: 3px solid none;
+  border-radius: 10px;
+  background-color: #FCB923;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.reset:active{
+  border: 3px solid #FCB923;
+  background-color: transparent;
 }
